@@ -12,27 +12,27 @@
 <body>
 
     <div id="app">
-        <h1>{{ greeting.toUpperCase() }}</h1>
-        <input v-model="greeting" size="50">
-
-
-
+        <p>Geef je naam in aub.</p>
+        <input v-model="naam">
+        <p>Hallo {{ naam }}</p>
     </div>
 
 
-    <script>
 
+    <script>
         const app = {
-            data() {
+            data: function () {
+
+
                 return {
-                    greeting: 'Hello world from the Vue data.'
+                    naam: ''
                 }
             }
-
-
         }
 
         Vue.createApp(app).mount('#app');
+
+
 
 
     </script>
