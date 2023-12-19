@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div v-if="tijd >7 && tijd < 12">
+            goeiemorgen
+        </div>
+        <div v-else-if="tijd >=12 && tijd < 18">
+            Goeiemiddag
+
+        </div>
+        <div v-else-if="tijd >=18 && tijd < 22">
+            Goeieavond
+
+        </div>
+        <div v-else>
+            Goeienacht
+        </div>
+    </div>
+
+
+    <script>
+        const app = {
+            data: function () {
+                return {
+                    tijd: 15
+                }
+            }
+        }
+
+
+
+
+        Vue.createApp(app).mount('#app')
+
+    </script>
+
+</body>
+
+</html>
