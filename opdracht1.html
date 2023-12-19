@@ -12,12 +12,12 @@
 
     <div id="boek">
         <p>Geef de titel aub.</p>
-        <input v-model="titel">
+        <input v-model="titel2">
         <p>Geef de prijs aub.</p>
         <input v-model="prijs">
         <p>Geef het aantal stuks aub.</p>
         <input v-model="aantal">
-        <p>Voor {{ aantal }} stuk(s) van het boek {{titel}}, tegen een kostprijs van {{prijs}}, betaal je {{ aantal *
+        <p>Voor {{ aantal }} stuk(s) van het boek {{titel2}}, tegen een kostprijs van {{prijs}}, betaal je {{ aantal *
             prijs }}€</p>
 
 
@@ -30,7 +30,7 @@
 
 
                 return {
-                    titel: '',
+                    titel2: '',
                     prijs: '',
                     aantal: ''
                 }
